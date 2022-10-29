@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--包扫描，只要标注了Component、Service、Controller、Repository注解的都会被扫描到ioc容器中-->
+    <context:component-scan base-package="com.yama.source" use-default-filters="false" />
+
+    <bean id="person" class="com.yama.source.entity.Person" scope="singleton">
+        <property name="name" value="yama" />
+        <property name="age" value="23" />
+    </bean>
+
+</beans>

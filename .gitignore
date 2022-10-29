@@ -1,0 +1,25 @@
+HELP.md
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+# 本项目指定忽略文件
+**/.mvn
+**/target/
+**/mvnw
+**/mvnw.cmd
+**/spring-source-boot.iml
+# 将该文件作为脱敏配置文件
+**/applicaiton-git.properties
+
